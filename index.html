@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Akhilesh S. Yadav</title>
+ <meta property="og:title" content="Akhilesh S. Yadav" />
+<meta property="og:description" content="AI Engineer • Open-Source Enthusiast • Building with LLMs & Full-Stack Magic" />
+<meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #000000;
+      --text-light: #333333;
+      --card-bg: #ffffff;
+      --border: #000000;
+      --link: #000000;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: left;
+      margin: 2rem 0 3rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      position: relative;
+      display: inline-block;
+    }
+
+    h1:hover .glitch-text {
+      animation: glitch 0.3s infinite;
+    }
+
+    .tagline {
+      font-size: 1.2rem;
+      color: var(--text-light);
+      margin-top: 0.5rem;
+    }
+
+    section {
+      margin: 2.5rem 0;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h2 {
+      font-size: 1.75rem;
+      margin-bottom: 1.25rem;
+      font-weight: 700;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: var(--text-light);
+    }
+
+    .project-card,
+    .cert-item {
+      background: var(--card-bg);
+      padding: 1.25rem;
+      border: 1px solid var(--border);
+      border-radius: 0;
+      margin-bottom: 1rem;
+    }
+
+    .project-card h3 {
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+      font-weight: 500;
+      transition: opacity 0.2s ease;
+    }
+
+    a:hover {
+      opacity: 0.7;
+      text-decoration: none;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin-bottom: 0.75rem;
+    }
+
+    .connect h2 {
+      margin-bottom: 0.75rem;
+    }
+
+    .connect p {
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    .connect a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    .connect a:hover {
+      text-decoration: none;
+    }
+
+   ::selection {
+  background: #000000; /* Black background */
+  color: #ffffff;     /* White text */
+}
+
+/* For Firefox support */
+::-moz-selection {
+  background: #000000;
+  color: #ffffff;
+}
+
+    @keyframes glitch {
+      0% { text-shadow: 2px 0 0 #000, -2px 0 0 #000; }
+      25% { text-shadow: -2px 0 0 #000, 2px 0 0 #000; }
+      50% { text-shadow: 2px 0 0 #000, -2px 0 0 #000; }
+      75% { text-shadow: -2px 0 0 #000, 2px 0 0 #000; }
+      100% { text-shadow: 0 0 0 transparent; }
+    }
+
+    .glitch-text {
+      position: relative;
+    }
+
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #000;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      ::-webkit-scrollbar-thumb {
+        background: #fff;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>
+      <span class="glitch-text">Akhilesh S. Yadav</span>
+    </h1>
+    <p class="tagline">AI Engineer • Open-Source Enthusiast • Building with LLMs & Full-Stack Magic</p>
+  </header>
+
+  <section class="about">
+    <p>
+      I’m Akhilesh - a final-year Computer Science student who believes technology should serve people, not confuse them. I build tools that are simple on the surface but thoughtful underneath.
+    </p>
+    <p>
+      My journey started with curiosity: taking apart small scripts, rebuilding them, and asking, “What if this could help someone?” That question led me to create projects that blend AI and human needs.
+    </p>
+    <p>
+      With <strong>ArogyaAgent</strong>, I wanted to cut through the noise in health information. So I built an AI assistant that answers medical questions using verified sources. No guesses, no drama, just clarity.
+    </p>
+    <p>
+      <strong>GitLens AR</strong> came from a different itch: what if you could see your code? I combined Three.js and the GitHub API to turn repositories into 3D spaces you can explore through your webcam, because sometimes understanding needs a new perspective.
+    </p>
+    <p>
+      <strong>LinkShala</strong> started as my personal toolkit - a simple space to collect the tools, resources, and inspirations I use daily as a developer. But I realized others might find it useful too, so I opened it up. Now it’s a shared hub where developers can discover helpful links, contribute their own, and reduce the noise of scattered bookmarks. Built with React.js and MongoDB, it’s my small contribution to a more organized, collaborative dev community.
+    </p>
+    <p>
+      I work across the stack: I design intuitive UIs with React, build robust backends with Node.js, and integrate AI not as a gimmick, but as a quiet helper. I use Docker to keep things repeatable, deploy on cloud platforms when needed, and always, always write code meant to be read by humans first.
+    </p>
+    <p>
+      Outside of projects, I contribute to open-source because I believe the best ideas grow in the open. I write to clarify my thoughts, and I build to learn, not just to ship.
+    </p>
+    <p>
+      At my core, I’m a problem-solver who cares about the “why” behind the code. If you’re working on something that matters, I’d love to hear about it.
+    </p>
+  </section>
+
+  <section class="projects">
+ <div class="project-card">
+      <h3>LinkShala</h3>
+      <p>A shared hub for developers to discover and contribute useful tools and resources. Built with Next.js and Firebase.</p>
+      <a href="https://linkkshala.vercel.app/" target="_naya">Live Site →</a>
+    </div>
+
+    <div class="project-card">
+      <h3>GitLens AR</h3>
+      <p>An AR-powered GitHub explorer that visualizes repos in 3D using Three.js and the GitHub API.</p>
+      <a href="https://github.com/YadavAkhileshh/GitLens-AR" target="_naya">GitHub →</a>
+    </div>
+
+    <div class="project-card">
+      <h3>ArogyaAgent</h3>
+      <p>AI health assistant using RAG and LLMs to answer medical queries with verified sources.</p>
+      <a href="https://github.com/YadavAkhileshh/-ArogyaAgent-" target="_naya">GitHub →</a>
+    </div>
+
+   
+
+    <div class="project-card">
+      <h3>Crackbano</h3>
+      <p>Interview prep platform with AI-generated questions and performance tracking.</p>
+      <a href="https://github.com/YadavAkhileshh/CrackBano" target="_naya">GitHub →</a>
+    </div>
+  </section>
+
+  <section class="certs">
+    <ul>
+      <li class="cert-item">
+        <a href="#" >Oracle Cloud Infrastructure 2025 Certified Generative AI Professional</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="connect">
+    <p>
+      <a href="mailto:yadavakhil2501@gmail.com">Email</a> •
+      <a href="https://github.com/YadavAkhileshh" target="_naya">GitHub</a> •
+      <a href="https://www.linkedin.com/in/yakhilesh/" target="_naya">LinkedIn</a> •
+      <a href="https://x.com/_Yakhil_" target="_naya">Twitter</a> •
+      <a href="https://dev.to/yakhilesh" target="_naya">Dev.to</a>
+    </p>
+  </section>
+
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const sections = document.querySelectorAll('section');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.1 });
+
+      sections.forEach(section => observer.observe(section));
+
+      document.addEventListener('keydown', (e) => {
+        if (e.ctrlKey && e.shiftKey && e.key === 'A') {
+          alert('You found it! Thanks for looking closely.');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
