@@ -1,161 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="description"
-    content="Akhilesh S. Yadav - Final-year CS student who codes, ships, and learns in public. Building tools that actually help people." />
-  <meta name="author" content="Akhilesh S. Yadav" />
-  <meta name="theme-color" content="#FAF7F0" />
-
-  <title>Akhilesh S. Yadav | Software Developer</title>
-
-  <meta property="og:title" content="Akhilesh S. Yadav | Software Developer" />
-  <meta property="og:description"
-    content="Final-year CS student who codes, ships, and learns in public. Building tools that actually help people." />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="en_US" />
-
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@_Yakhil" />
-  <meta name="twitter:title" content="Akhilesh S. Yadav | Software Developer" />
-  <meta name="twitter:description" content="Final-year CS student who codes, ships, and learns in public." />
-
+  <meta name="description" content="Akhilesh Yadav - AI Engineer & Web Developer" />
+  <meta name="theme-color" content="#030303" />
+  <title>Akhilesh Yadav</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="icon" type="image/jpeg" href="assets/Akhil.jpg" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/Akhil_nobg.png" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
 </head>
-
 <body>
-  <div class="ambient-bg"></div>
+  <div class="scroll-progress"></div>
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
 
-  <div class="theme-bar">
-    <div class="theme-selector">
-      <button class="theme-btn theme-cream active" title="Warm Cream"></button>
-      <button class="theme-btn theme-blush" title="Soft Blush"></button>
-      <button class="theme-btn theme-sage" title="Calm Sage"></button>
-      <button class="theme-btn theme-lavender" title="Gentle Lavender"></button>
-      <button class="theme-btn theme-mist" title="Cool Mist"></button>
-    </div>
-  </div>
-
-  <button class="mobile-theme-toggle"></button>
-  <div class="mobile-theme-dropdown">
-    <div class="mobile-theme-selector-scroll">
-      <button class="theme-btn theme-cream" title="Warm Cream"></button>
-      <button class="theme-btn theme-blush" title="Soft Blush"></button>
-      <button class="theme-btn theme-sage" title="Calm Sage"></button>
-      <button class="theme-btn theme-lavender" title="Gentle Lavender"></button>
-      <button class="theme-btn theme-mist" title="Cool Mist"></button>
-    </div>
+  <div class="glow-container">
+    <div class="glow-orb"></div>
   </div>
 
   <div class="container">
-    <header>
-      <h1>
-        <span class="glitch-text">Akhilesh S. Yadav</span>
-      </h1>
-      <p class="tagline">Final-year CS student who codes, ships, and learns in public</p>
+    <header class="hero">
+      <div class="hero-text-container">
+        <h1 class="hero-giant">
+          <div class="reveal-text">AKHILESH</div>
+          <div class="reveal-text outline-text">YADAV</div>
+        </h1>
+
+        <div class="hero-lower">
+          <div class="hero-bio">
+            <p>Engineering intelligent AI systems and high-performance web apps.</p>
+            <div class="hero-links">
+                <a href="https://github.com/YadavAkhileshh" target="_blank" class="magnetic">GitHub</a>
+                <a href="https://www.linkedin.com/in/yakhilesh/" target="_blank" class="magnetic">LinkedIn</a>
+                <a href="https://x.com/_Yakhil" target="_blank" class="magnetic">Twitter</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="hero-image-creative">
+        <img src="assets/Akhil_nobg.png" alt="Akhilesh Yadav" class="hero-img-element" />
+        <div class="status-pill magnetic">
+          <span class="status-dot"></span>
+          <span class="status-text">Building AI Agent</span>
+        </div>
+      </div>
     </header>
 
-    <section class="about">
-      <p>
-        I'm Akhilesh - a final-year Computer Science student who believes technology should serve people, not confuse
-        them. I build tools that are simple on the surface but thoughtful underneath.
-      </p>
-      <p>
-        My journey started with curiosity: taking apart small scripts, rebuilding them, and asking, "What if this could
-        help someone?" That question led me to create projects that blend AI and human needs.
-      </p>
-      <p>
-        <strong>GitLens AR</strong> came from a different itch: what if you could see your code? I combined Three.js and
-        the GitHub API to turn repositories into 3D spaces you can explore through your webcam, because sometimes
-        understanding needs a new perspective.
-      </p>
-      <p>
-        <strong>LinkShala</strong> started as my personal toolkit - a simple space to collect the tools, resources, and
-        inspirations I use daily as a developer. But I realized others might find it useful too, so I opened it up. Now
-        it's a shared hub where developers can discover helpful links, contribute their own, and reduce the noise of
-        scattered bookmarks. Built with React.js and MongoDB, it's my small contribution to a more organized,
-        collaborative dev community.
-      </p>
-      <p>
-        I work across the stack: I design intuitive UIs with React, build robust backends with Node.js, and integrate AI
-        not as a gimmick, but as a quiet helper. I use Docker to keep things repeatable, deploy on cloud platforms when
-        needed, and always, always write code meant to be read by humans first.
-      </p>
-      <p>
-        Outside of projects, I contribute to open-source because I believe the best ideas grow in the open. I write to
-        clarify my thoughts, and I build to learn, not just to ship.
-      </p>
-      <p>
-        At my core, I'm a problem-solver who cares about the "why" behind the code. If you're working on something that
-        matters, I'd love to hear about it.
-      </p>
+    <div class="marquee-container">
+      <div class="marquee-content">
+        <span>AI ENGINEER</span> <span>•</span> <span>WEB DEVELOPER</span> <span>•</span> <span>PROBLEM SOLVER</span> <span>•</span>
+        <span>AI ENGINEER</span> <span>•</span> <span>WEB DEVELOPER</span> <span>•</span> <span>PROBLEM SOLVER</span> <span>•</span>
+        <span>AI ENGINEER</span> <span>•</span> <span>WEB DEVELOPER</span> <span>•</span> <span>PROBLEM SOLVER</span> <span>•</span>
+        <span>AI ENGINEER</span> <span>•</span> <span>WEB DEVELOPER</span> <span>•</span> <span>PROBLEM SOLVER</span> <span>•</span>
+      </div>
+    </div>
+
+    <section class="section" id="projects-section">
+      <div class="section-header">
+        <div class="tabs">
+            <button class="tab active magnetic" data-target="ai">AI Projects</button>
+            <button class="tab magnetic" data-target="web">Web Dev</button>
+        </div>
+      </div>
+      
+      <div class="projects-wrapper">
+          <div class="projects-grid active" id="ai-projects-container"></div>
+          <div class="projects-grid" id="web-projects-container"></div>
+      </div>
     </section>
 
-    <section class="projects">
-      <div class="project-card">
-        <h3>LinkShala</h3>
-        <p>A shared hub for developers to discover and contribute useful tools and resources. Built with Next.js and
-          Firebase.</p>
-        <a href="https://linkkshala.vercel.app/" target="_blank">Live Site →</a>
-      </div>
-
-      <div class="project-card">
-        <h3>GitLens AR</h3>
-        <p>An AR-powered GitHub explorer that visualizes repos in 3D using Three.js and the GitHub API.</p>
-        <a href="https://github.com/YadavAkhileshh/GitLens-AR" target="_blank">GitHub →</a>
-      </div>
-
-      <div class="project-card">
-        <h3>ArogyaAgent</h3>
-        <p>AI that helps Indians find cheaper generic medicines and take them the right way for proper absorption, not
-          just on time</p>
-        <a href="https://github.com/YadavAkhileshh/-ArogyaAgent-" target="_blank">GitHub →</a>
-      </div>
-
-      <div class="project-card">
-        <h3>Crackbano</h3>
-        <p>Interview prep platform with AI-generated questions and performance tracking.</p>
-        <a href="https://github.com/YadavAkhileshh/CrackBano" target="_blank">GitHub →</a>
-      </div>
-      <div class="project-card">
-        <h3>WebhookHub</h3>
-        <p>Webhook management and testing platform with real-time event monitoring.</p>
-        <a href="https://webhooks-hub.vercel.app/" target="_blank">Live Site →</a>
-      </div>
-      <div class="project-card">
-        <h3>SVL</h3>
-        <p>AI-Powered Educational Platform for Interactive Learning</p>
-        <a href="https://svl-one.vercel.app/" target="_blank">Live Site →</a>
-      </div>
-
-    </section>
-
-    <section class="certs">
-      <ul>
-        <li class="cert-item">
+    <section class="section">
+      <h2 class="section-title">Certifications</h2>
+      <ul class="cert-list">
+        <li class="cert-item magnetic">
           <a href="#">Oracle Cloud Infrastructure 2025 Certified Generative AI Professional</a>
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.5 10.5L10.5 4.5M10.5 4.5V10.125M10.5 4.5H4.875" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </li>
       </ul>
     </section>
 
-    <section class="connect">
-      <p>
-        <a href="mailto:yadavakhil2501@gmail.com">Email</a>
-        <a href="https://github.com/YadavAkhileshh" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/yakhilesh/" target="_blank">LinkedIn</a>
-        <a href="https://x.com/_Yakhil" target="_blank">Twitter</a>
-        <a href="https://dev.to/yakhilesh" target="_blank">Dev.to</a>
-        <a href="https://medium.com/@yakhil25" target="_blank">Medium</a>
-      </p>
-    </section>
+    <footer class="creative-footer">
+      <div class="footer-cta">
+        <h2 class="footer-giant">LET'S BUILD<br/><span class="outline-text">TOGETHER</span></h2>
+        <a href="mailto:yadavakhil2501@gmail.com" class="giant-email magnetic">yadavakhil2501@gmail.com</a>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-right">
+          <a href="https://github.com/YadavAkhileshh" target="_blank" class="magnetic">GitHub</a>
+          <a href="https://www.linkedin.com/in/yakhilesh/" target="_blank" class="magnetic">LinkedIn</a>
+          <a href="https://x.com/_Yakhil" target="_blank" class="magnetic">Twitter</a>
+        </div>
+      </div>
+    </footer>
   </div>
 
+  <script src="projects.js"></script>
   <script src="script.js"></script>
 </body>
-
 </html>
