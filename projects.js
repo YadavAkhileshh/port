@@ -1,6 +1,24 @@
 const PROJECT_DATA = [
     {
         category: "ai",
+        title: "Eskalyr Agentic RAG",
+        description: "Enterprise Agentic RAG platform with hybrid retrieval, cross-encoder reranking, hallucination verification, and autonomous ticket escalation.",
+        link: "https://github.com/YadavAkhileshh/Eskalyr"
+    },
+    {
+        category: "ai",
+        title: "CartPilot",
+        description: "Agentic commerce assistant featuring multimodal product search, personalized recommendations, memory, and autonomous checkout workflows.",
+        link: "https://github.com/YadavAkhileshh/CartPilot"
+    },
+    {
+        category: "ai",
+        title: "TraceIQ",
+        description: "Knowledge retrieval platform supporting PDFs, GitHub repositories, and documentation using hybrid search, reranking, and vector databases.",
+        link: "https://github.com/YadavAkhileshh/TraceIQ"
+    },
+    {
+        category: "ai",
         title: "ArogyaAgent",
         description: "AI assistant that helps users find generic medicines and optimizes absorption schedules based on their profiles.",
         link: "https://github.com/YadavAkhileshh/-ArogyaAgent-"
