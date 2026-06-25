@@ -52,5 +52,29 @@ const PROJECT_DATA = [
         title: "WebhookHub",
         description: "Full-stack platform for real-time webhook management, testing, and event monitoring.",
         link: "https://webhooks-hub.vercel.app/"
+    },
+    {
+        category: "web",
+        title: "Velocity",
+        description: "A Web3 remittance platform facilitating instant, low-fee USDC-to-UPI transfers utilizing Next.js, Solana, and Dodo Payments.",
+        link: "https://github.com/befikre/Velocity"
+    },
+    {
+        category: "web",
+        title: "OpenPlayground",
+        description: "A community-driven platform for web developers to showcase projects with category filtering, search, and deadline tracking.",
+        link: "https://github.com/YadavAkhileshh/OpenPlayground"
+    },
+    {
+        category: "web",
+        title: "Gitara",
+        description: "An interactive dashboard visualizing GitHub repository structures, dependency trees, and tech stack configurations.",
+        link: "https://github.com/YadavAkhileshh/Gitara"
+    },
+    {
+        category: "npm",
+        title: "gitpm-agent",
+        description: "An automated post-mortem CLI agent that conducts git forensics and merges system logs to generate blameless incident reports.",
+        link: "https://www.npmjs.com/package/gitpm-agent"
     }
 ];

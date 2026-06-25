@@ -20,6 +20,21 @@ const cursorDot = document.querySelector('.cursor-dot');
 const cursorOutline = document.querySelector('.cursor-outline');
 let isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 
+function addHoverEffect(el) {
+    if (!isTouchDevice && cursorOutline && el) {
+        el.addEventListener('mouseenter', () => {
+            cursorOutline.style.width = '60px';
+            cursorOutline.style.height = '60px';
+            cursorOutline.style.backgroundColor = 'rgba(255,255,255,0.05)';
+        });
+        el.addEventListener('mouseleave', () => {
+            cursorOutline.style.width = '40px';
+            cursorOutline.style.height = '40px';
+            cursorOutline.style.backgroundColor = 'transparent';
+        });
+    }
+}
+
 if (!isTouchDevice && cursorDot && cursorOutline) {
     window.addEventListener('mousemove', (e) => {
         const posX = e.clientX;
@@ -35,47 +50,48 @@ if (!isTouchDevice && cursorDot && cursorOutline) {
     });
 
     const hoverElements = document.querySelectorAll('a, button, .tab, .project-card, .magnetic');
-    hoverElements.forEach(el => {
-        el.addEventListener('mouseenter', () => {
-            cursorOutline.style.width = '60px';
-            cursorOutline.style.height = '60px';
-            cursorOutline.style.backgroundColor = 'rgba(255,255,255,0.05)';
-        });
-        el.addEventListener('mouseleave', () => {
-            cursorOutline.style.width = '40px';
-            cursorOutline.style.height = '40px';
-            cursorOutline.style.backgroundColor = 'transparent';
-        });
-    });
+    hoverElements.forEach(addHoverEffect);
 }
 
 // Projects are now loaded securely from projects.js as PROJECT_DATA
 
 const aiProjectsContainer = document.getElementById('ai-projects-container');
 const webProjectsContainer = document.getElementById('web-projects-container');
+const npmProjectsContainer = document.getElementById('npm-projects-container');
 const tabs = document.querySelectorAll('.tab');
 
 function renderProjects() {
-    aiProjectsContainer.innerHTML = '';
-    webProjectsContainer.innerHTML = '';
+    if (aiProjectsContainer) aiProjectsContainer.innerHTML = '';
+    if (webProjectsContainer) webProjectsContainer.innerHTML = '';
+    if (npmProjectsContainer) npmProjectsContainer.innerHTML = '';
 
     PROJECT_DATA.forEach((proj) => {
         const card = document.createElement('div');
         card.className = 'project-card';
+        const linkText = proj.category === 'npm' ? 'View Package' : 'View Project';
         card.innerHTML = `
             <h3>${proj.title}</h3>
             <p>${proj.description}</p>
             <div class="project-links">
                 <a href="${proj.link}" target="_blank" class="magnetic">
-                    View Project
+                    ${linkText}
                     <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.5 10.5L10.5 4.5M10.5 4.5V10.125M10.5 4.5H4.875" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </a>
             </div>
         `;
         
-        if (proj.category === 'ai') {
+        // Add hover effects for the card and its link
+        if (typeof addHoverEffect === 'function') {
+            addHoverEffect(card);
+            const link = card.querySelector('a');
+            if (link) addHoverEffect(link);
+        }
+        
+        if (proj.category === 'ai' && aiProjectsContainer) {
             aiProjectsContainer.appendChild(card);
-        } else {
+        } else if (proj.category === 'npm' && npmProjectsContainer) {
+            npmProjectsContainer.appendChild(card);
+        } else if (webProjectsContainer) {
             webProjectsContainer.appendChild(card);
         }
     });
